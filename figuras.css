@@ -60,3 +60,12 @@ main h3 {
 form {
     padding: 10px 30px 45px;
 }
+main .reto {
+    background-color: #22648a8c;
+}
+.mensaje {
+    background-color: rgba(21, 138, 138, 0.521);
+}
+.mensaje h3 {
+    text-align: center;
+}

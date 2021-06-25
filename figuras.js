@@ -1,5 +1,5 @@
 //Código del Cuadrado
-console.group("Cuadrados")
+//console.group("Cuadrados")
 //Lado del cuadrado
 //const ladoCuadrado = 5;
 //console.log("Los lados del cuadrado miden: " + ladoCuadrado + " cms");
@@ -13,11 +13,11 @@ function areaCuadrado(lado) {
     return lado * lado;
 }
 //console.log("El área del cuadrado mide: " + areaCuadrado + " cms^2");
-console.groupEnd();
+//console.groupEnd();
 
 
 //Código del Triangulo
-console.group("Triangulo");
+//console.group("Triangulo");
 //Lados de triangulo
 //const ladoTriangulo1 = 6;
 //const ladoTriangulo2 = 6;
@@ -36,11 +36,11 @@ function perimetroTriangulo(baseTriangulo, ladoTriangulo1, ladoTriangulo2) {
 //console.log("El área del triangulo mide: " + areaTriangulo + " cms^2");
 function areaTriangulo(baseTriangulo, alturaTriangulo) {
     return ((baseTriangulo * alturaTriangulo)/2)}
-console.groupEnd();
+//console.groupEnd();
 
 
 //Código del Circulos
-console.group("Circulos");
+//console.group("Circulos");
 //Radio
 //const radioCirculo = 4;
 //console.log("El radio del circulo es " + radioCirculo + " cms.");
@@ -62,7 +62,7 @@ function perimetroCirculo(radioCirculo) {
 function areaCirculo(radioCirculo) {
     return (PI * (radioCirculo*radioCirculo))
 }
-console.groupEnd();
+//console.groupEnd();
 
 //Aqui interactuamos con el HTML
 //Cuadrado
@@ -157,3 +157,74 @@ function calcularAreaCirculo(){
     const areaCir = areaCirculo(radioCir);
     alert(areaCir);
 }
+//Triangulo Isoceles calculando Altura
+
+function calcularAlturaTrianguloIsoceles(){
+    console.group("llamados");
+    const inputLado1 = document.getElementById("inputLado1TrianguloIso")
+    const lado1Triangulo = inputLado1.value;
+    const lado1Tri = parseInt(lado1Triangulo);
+    console.log(lado1Tri);
+    console.log(typeof(lado1Tri));
+    
+
+    const inputLado2 = document.getElementById("inputLado2TrianguloIso")
+    const lado2Triangulo = inputLado2.value;
+    const lado2Tri = parseInt(lado2Triangulo);
+    console.log(lado2Tri);
+    console.log(typeof(lado2Tri));
+
+    const inputLado3 = document.getElementById("inputLado3TrianguloIso")
+    const lado3Triangulo = inputLado3.value;
+    const lado3Tri = parseInt(lado3Triangulo);
+    console.log(lado3Tri);
+    console.log(typeof(lado3Tri));
+    console.groupEnd();
+    
+    function despejeAlturaTriangulo(lado, base){
+    return Math.sqrt((lado * lado) - (base/2) * (base/2));
+    }   
+    function filtrandoDatos (){
+        console.group("filtrado")
+        if (lado1Tri === lado2Tri){
+            const lado = lado1Tri;
+            console.log(lado);
+            console.log(typeof(lado));
+            const base = lado3Tri;
+            console.log(base)
+            console.log(typeof(base));
+            const altura = despejeAlturaTriangulo(lado, base);
+            alert (altura);
+        } 
+        
+        else if (lado1Tri === lado3Tri){
+            const lado = lado1Tri;
+            console.log(lado);
+            console.log(typeof(lado));
+            const base = lado2Tri; 
+            console.log(base)
+            console.log(typeof(base));
+            const altura = despejeAlturaTriangulo(lado, base);
+            alert (altura);
+        } 
+        
+        else if (lado2Tri === lado3Tri){
+            const lado = lado2Tri;
+            console.log(lado);
+            console.log(typeof(lado));
+            const base = lado1Tri;
+            console.log(base)
+            console.log(typeof(base));
+            const altura = despejeAlturaTriangulo(lado, base);
+            alert (altura);
+        } 
+        
+        else{
+            alert("Tus valores no corresponden con un Triangulo Isoceles");
+        }
+        console.groupEnd();
+    }
+    filtrandoDatos();
+}
+console.log("¡Nunca pares de aprender!");
+console.log("¡Al princio parece muy dificil, después compredes que se puede!");

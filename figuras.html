@@ -39,11 +39,11 @@
                 <label for="inputLado1Triangulo">
                     Escribe cuánto mide el <b>lado</b> 1 de tu triangulo
                 </label>
-                <input id="inputLado2Triangulo"type="number"><br/>
+                <input id="inputLado1Triangulo"type="number"><br/>
                 <label for="inputLado2Triangulo">
                     Escribe cuánto mide el <b>lado</b> 2 de tu triangulo
                 </label>
-                <input id="inputLado1Triangulo"type="number">
+                <input id="inputLado2Triangulo"type="number">
                 <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button><br/>
             </form>
 
@@ -72,6 +72,29 @@
                 <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
                 <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
             </form>
+        </section>
+        <section class="reto">
+            <h2>RETO</h2>
+            <h3>Calculo de altura de un <b>Triangulo Isoceles</b></h3>
+            <form>
+                <label for="inputLado1TrianguloIso">
+                    Escribe cuánto mide la <b>lado 1</b> de tu triangulo
+                </label>
+                <input id="inputLado1TrianguloIso" type="number"> <br/>
+                <label for="inputLado2TrianguloIso">
+                    Escribe cuánto mide el <b>lado 2</b> de tu triangulo
+                </label>
+                <input id="inputLado2TrianguloIso"type="number"><br/>
+                <label for="inputLado3TrianguloIso">
+                    Escribe cuánto mide el <b>lado 3</b> de tu triangulo
+                </label>
+                <input id="inputLado3TrianguloIso"type="number">
+
+                <button type="button" onclick="calcularAlturaTrianguloIsoceles()">Calcular la Altura</button><br/>
+            </form>
+        </section>
+        <section class="mensaje">
+            <h3>¡Revisa la consola, te deje un mensaje!</h3>
         </section>
     </main>
     <script src="./figuras.js"></script>
