@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 30px;
+
+}
+h1{
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+header {
+    width: 100%;
+    height: auto;
+    background-color: #22648a;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(230,230,230);
+    border-top: 1.5px solid #22648a;
+    display: flex;
+    flex-direction: column;
+}
+header div {
+    width: 550px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+header div h1, header div h3 {
+    text-align: center;
+}
+header h3 {
+    padding-top: 25px;
+}
+main section {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    background-color: rgb(230,230,230);
+}
+main h2 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+main h3 {
+    padding-left: 15px;
+}
+form {
+    padding: 10px 30px 45px;
+}
+main .reto {
+    background-color: #22648a8c;
+}
+.mensaje {
+    background-color: rgba(21, 138, 138, 0.521);
+}
+.mensaje h3 {
+    text-align: center;
+}
+main section ol {
+    margin: 20px;
+}
+main section ol li {
+    padding-bottom: 15px;
+}
+
+section ol li a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    color: #333;
+}
+section ol li a:hover {
+    background-color: #22648a8c;    
+    color: #fff;
+}
+footer .footer-title p {
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+footer .footer-grid {
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+footer .footer-grid a {
+    margin-top: 30px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #333;
+    border-radius: 10px;
+}
+footer .footer-grid a:hover {
+    background-color: #22648a8c;    
+    color: #fff;
+}
