@@ -11,7 +11,7 @@
     <header>
         <div>
             <h1>Porcentajes y descuentos</h1>
-            <p>Este es el segundo tallr del curso practico de JavaScript</p>
+            <p>Este es el segundo taller del curso practico de JavaScript</p>
         </div>
     </header>
     <main>
@@ -25,6 +25,20 @@
                 <input type="number"  id="inputDiscount">
                 <button type="button" onclick="priceDiscount()">Calcular</button>
                 <p id="resultP"></p>
+            </form>
+        </section>
+        <section>
+            <h2>Reto</h2>
+            <h3>Calcula el valor total de tu compra</h3>
+            <p>Ingresa el valor de tus 3 productos e ingresa el cupon para realizarte un descuento especial</p>
+            <form action="">
+                <label for="inputProduct1">Escribe el precio del producto:</label>
+                <input type="text" id="inputProduct"><br/>
+
+                <label for="inputCupon">Escribe el cupon de descuento:</label>
+                <input type="text" id="inputCupon">
+                <button type="button" onclick="priceDiscountProducts()">Comprar</button>
+                <p id="resultPrice"></p>
             </form>
         </section>
     </main>

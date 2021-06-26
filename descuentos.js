@@ -38,3 +38,43 @@ function priceDiscount() {
 //console.log("El precio con descuento es:"+ precioConDescuento + "$.");
 //console.log("El porcentaje del descuento es de: " + porcentajePrecioConDescuento + "%.")
 //console.groupEnd();
+
+//RETO
+function aplicateDiscount (price, cuponE) {
+    return priceFinal = price - ((price * cuponE)/100);
+}
+function priceDiscountProducts() {
+    console.group("products")
+    const firstProduct = document.getElementById("inputProduct");
+    const firtsP = firstProduct.value;
+    const first = parseInt(firtsP)
+    console.log(typeof(first));
+    console.log(first);
+
+
+    const cuponSpecial =document.getElementById("inputCupon")
+    const cupon = cuponSpecial.value
+    console.group("cupon");
+    console.log(typeof(cupon));
+    console.log(cupon);
+    console.groupEnd();
+
+    const cupones = ["uno", "dos", "tres"]
+    let cuponE;
+
+    switch(cupon){
+        case "uno":
+            cuponE = 15;
+        break;
+        case "dos":
+            cuponE = 20;
+        break;
+        case "tres":
+            cuponE= 25;
+        break;
+    }
+    const precioDesc = aplicateDiscount(first, cuponE);
+
+    const resultadoPrice = document.getElementById("resultPrice");
+    resultadoPrice.innerText = "El precio despues del descuento es: $" + precioDesc;
+}
