@@ -69,6 +69,7 @@ form {
     padding: 10px 30px 45px;
 }
 main .reto {
+    padding: 30px;
     background-color: #22648a8c;
 }
 .mensaje {
@@ -118,6 +119,28 @@ footer .footer-grid a {
     border-radius: 10px;
 }
 footer .footer-grid a:hover {
+    background-color: #22648a8c;    
+    color: #fff;
+}
+
+main .reto .printMediana {
+    
+   margin: 10px;
+   margin-bottom: 45px;
+}
+
+main .reto a {
+    margin-top: 30px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    border-radius: 10px;
+    margin-left: 20px;
+    background-color: #22648a;
+    margin-bottom: 45px;
+}
+main .reto a:hover {
     background-color: #22648a8c;    
     color: #fff;
 }
