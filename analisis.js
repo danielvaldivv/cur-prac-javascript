@@ -86,4 +86,4 @@ const printSalariesTop10 = document.getElementById("salariesTop10Col")
 printSalariesTop10.innerText = "El top 10% de salarios en colombia segun la base de datos es: " + salariosColTop10[0] + ", " + salariosColTop10[1] + ".";
 
 const printMedianaSalariesTop10 = document.getElementById("medianaSalariesTop10Col")
-printMedianaSalariesTop10.innerText = "La mediana del top 10% de los salarios de la base de datos es: " + medianaTop10Col;
+printMedianaSalariesTop10.innerText = "La mediana del top 10% de los salarios de la base de datos es: " + medianaTop10Col + ".";
