@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediana</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Mediana</h1>
+            <h3>Aqui podras calcular la mediana de los valores ingresados</h3>
+        </div>
+    </header>
+   <main>
+    <section class="reto">
+        <h2 >RETO</h2>
+        <p>En la parte de abajo podras ingresar máximo 6 valores.</p>
+        <p>Despues de esto, podrás solicitar el calculo de los datos ingresados sin importar si el numero de datos ingresado es par o impar.</p>
+        <form action="">
+
+            <label for="inputArray0">Primer valor</label>
+            <input id="inputArray0" type="number"><br/>
+
+            <label for="inputArray1">Segundo valor</label>
+            <input id="inputArray1" type="number"><br/>
+
+            <label for="inputArray2">Tercero valor</label>
+            <input id="inputArray2" type="number"><br/>
+
+            <label for="inputArray3">Cuarto valor</label>
+            <input id="inputArray3" type="number"><br/>
+
+            <label for="inputArray4">Quinto valor</label>
+            <input id="inputArray4" type="number"><br/>
+
+            <label for="inputArray5">Sexto valor</label>
+            <input id="inputArray5" type="number">
+
+            <button type="button" onclick="introducirValorArray()" >Calcular Mediana</button>
+        </form>
+        <p id="printMediana" class="printMediana"></p>
+        <a href="./mediana.html">Borrar datos</a>
+    </section>
+   </main>
+   <footer>
+    <section class="footer-title">
+        <p>Encuentrame en:</p>
+    </section>
+    <section class="footer-grid">
+        <section><a href="https://platzi.com/p/danielvaldivv/">Platzi</a></section>
+        <section><a href="https://github.com/danielvaldivv">GitHub</a></section>
+        <section><a href="https://www.linkedin.com/feed/">LinkedIn</a></section>
+        <section><a href="https://twitter.com/danielvaldivv">Twitter</a></section>
+    </section>
+</footer>
+    <script src="./mediana.js"></script>
+</body>
+</html>
